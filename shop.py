@@ -24,3 +24,6 @@ def add_tax(price, rate=0.12):
 
 def apply_coupon(price):
     return price - 5
+
+def in_stock(stock, sku):
+    return stock.get(sku, 0) > 0
